@@ -68,8 +68,7 @@ const AddForm = (props) => {
     }
 
     return (
-        <div>
-            
+        <div>            
             <Form onSubmit={handleSubmit}>
             <H3>Make a New Smurf for Smurf Village</H3>
                 <Input type="text" name="name" value={name} placeholder="Name of New Smurf" onChange={handleNameChanges} />
