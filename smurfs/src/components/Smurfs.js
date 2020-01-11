@@ -6,7 +6,10 @@ const H2 = styled.h2`
     margin: 3% auto 1%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 1.5em;
     color: #316e92;
+    width: 75%;
 `;
 
 const H3 = styled.h3`
@@ -27,14 +30,18 @@ const P = styled.p`
 `;
 
 const Button = styled.button`
-    margin: 0 auto 1%;
+    margin: 1% auto;
     padding: 0.5%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #316e92;
     color: #fff;
     font-size: 0.8rem;
     border-color: #66a7cc;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1px;
 `;
 
 const Smurf = ({ item, killSmurf }) => {

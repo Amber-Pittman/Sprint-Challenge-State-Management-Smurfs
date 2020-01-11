@@ -39,7 +39,6 @@ function App(props) {
           <Smurfs item={item} key={item.id} killSmurf={props.killSmurf} />
         ))}
         
-        
       </div>
     );
   }
@@ -61,4 +60,4 @@ function App(props) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(App);
+  )(App);
