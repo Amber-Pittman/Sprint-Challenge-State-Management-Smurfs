@@ -24,6 +24,17 @@ const H2 = styled.h2`
   justify-content: center;
 `;
 
+const H20 = styled.h2`
+    font-size: 2rem;
+    margin: 3% auto 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5em;
+    color: #316e92;
+    width: 75%;
+`;
+
 function App(props) {
   useEffect(() => {
     props.getSmurfs()
@@ -35,10 +46,10 @@ function App(props) {
         <H2>The most smurffed up time you'll ever have!</H2>
         <AddForm />
         
+        <H20>Will You Make the Sacrifice for the Greater Good?</H20>
         {props.smurfArray.map(item => (
           <Smurfs item={item} key={item.id} killSmurf={props.killSmurf} />
         ))}
-        
         
       </div>
     );
@@ -61,4 +72,4 @@ function App(props) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(App);
+  )(App);

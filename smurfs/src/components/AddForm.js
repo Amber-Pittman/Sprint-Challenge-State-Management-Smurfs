@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Form = styled.form`
     margin: 0 auto;
-    width: 33%;
+    width: 50%;
 `;
 
 const H3 = styled.h3`
@@ -13,6 +13,8 @@ const H3 = styled.h3`
     margin: 3% auto 1%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 1.5em;
     color: #316e92;
 `;
 
@@ -26,7 +28,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-    margin: 0 auto 1%;
+    margin: 2.5% auto;
     padding: 2%;
     display: flex;
     justify-content: center;
@@ -34,6 +36,9 @@ const Button = styled.button`
     color: #fff;
     border-radius: 50%;
     border-color: #66a7cc;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1px;
 `;
 
 
@@ -63,8 +68,7 @@ const AddForm = (props) => {
     }
 
     return (
-        <div>
-            
+        <div>            
             <Form onSubmit={handleSubmit}>
             <H3>Make a New Smurf for Smurf Village</H3>
                 <Input type="text" name="name" value={name} placeholder="Name of New Smurf" onChange={handleNameChanges} />
